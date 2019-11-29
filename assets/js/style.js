@@ -4,10 +4,11 @@ function sendInfo(){
   var userAge = document.getElementById('userAge').value;
   if(isNaN(userAge)==true){
     alert('erreur');
-  }
-  if(userAge < 18){
-    alert('Dommage... vous êtes mineur :\'\(');
   } else{
-    alert('Vous êtes majeur');
+      if(userAge < 18){
+        alert('Dommage... vous êtes mineur :\'\(');
+      } else{
+        alert('Vous êtes majeur');
+      }
   }
 };
