@@ -1,10 +1,13 @@
 var sendButtonVar = document.getElementById('sendButton');
 sendButtonVar.addEventListener('click', sendInfo);
-function sendInfo() {
+function sendInfo(){
   var userAge = document.getElementById('userAge').value;
-  if (userAge < 18) {
+  if(isNaN(userAge)==true){
+    alert('erreur');
+  }
+  if(userAge < 18){
     alert('Dommage... vous êtes mineur :\'\(');
-  } else {
+  } else{
     alert('Vous êtes majeur');
   }
 };
